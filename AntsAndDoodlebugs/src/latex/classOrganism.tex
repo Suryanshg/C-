@@ -1,0 +1,107 @@
+\section{Organism Class Reference}
+\label{classOrganism}\index{Organism@{Organism}}
+
+
+{\ttfamily \#include $<$Organism.\+h$>$}
+
+Inheritance diagram for Organism\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOrganism}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Organism} ()
+\item 
+\textbf{ Organism} (bool b)
+\item 
+bool \textbf{ is\+Prey} ()
+\item 
+virtual int \textbf{ move} (\textbf{ Grid} $\ast$grid)=0
+\item 
+virtual bool \textbf{ breed} (\textbf{ Grid} $\ast$grid)=0
+\item 
+void \textbf{ set\+Am\+Ant} (bool b)
+\item 
+virtual \textbf{ $\sim$\+Organism} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classOrganism_aeb16ee24b64839584b4862384d0b53fe}} 
+\index{Organism@{Organism}!Organism@{Organism}}
+\index{Organism@{Organism}!Organism@{Organism}}
+\subsubsection{Organism()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Organism\+::\+Organism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{classOrganism_ac7d3dbebaf5df39d0a7883b2d76b4868}} 
+\index{Organism@{Organism}!Organism@{Organism}}
+\index{Organism@{Organism}!Organism@{Organism}}
+\subsubsection{Organism()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Organism\+::\+Organism (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+References am\+Ant.
+
+\mbox{\label{classOrganism_aa5aa2e9fc3134358c929fa0c9d230c3b}} 
+\index{Organism@{Organism}!````~Organism@{$\sim$\+Organism}}
+\index{````~Organism@{$\sim$\+Organism}!Organism@{Organism}}
+\subsubsection{$\sim$\+Organism()}
+{\footnotesize\ttfamily Organism\+::$\sim$\+Organism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classOrganism_a423246fb1dee94db6c8c3b08fba57ead}} 
+\index{Organism@{Organism}!breed@{breed}}
+\index{breed@{breed}!Organism@{Organism}}
+\subsubsection{breed()}
+{\footnotesize\ttfamily virtual bool Organism\+::breed (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ Doodlebug} \doxyref{}{p.}{classDoodlebug_a6ab3919da6f9404f1f3af05f0bbde13c}, and \textbf{ Ant} \doxyref{}{p.}{classAnt_af899faded61186f5ca27e43cee1463ba}.
+
+\mbox{\label{classOrganism_aa5213b2e2b0c4f227dc7dfc4c4ab411c}} 
+\index{Organism@{Organism}!is\+Prey@{is\+Prey}}
+\index{is\+Prey@{is\+Prey}!Organism@{Organism}}
+\subsubsection{is\+Prey()}
+{\footnotesize\ttfamily bool Organism\+::is\+Prey (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References am\+Ant.
+
+\mbox{\label{classOrganism_a2627a1917b919ab131d40d868b966020}} 
+\index{Organism@{Organism}!move@{move}}
+\index{move@{move}!Organism@{Organism}}
+\subsubsection{move()}
+{\footnotesize\ttfamily virtual int Organism\+::move (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \textbf{ Doodlebug} \doxyref{}{p.}{classDoodlebug_a5f28800e091fbeaabd57079b0c36e997}, and \textbf{ Ant} \doxyref{}{p.}{classAnt_a6806cb12fd6e7eea2ff74ea8aa33ce28}.
+
+
+
+Referenced by Tests2\+::ants\+Breed\+Test(), Tests2\+::ants\+Die\+Test(), Tests2\+::ants\+Move\+Test(), Tests2\+::doodle\+Breed\+Test(), Tests2\+::doodle\+Dietest(), Tests2\+::doodle\+Move\+Test(), and Production\+::run\+Production().
+
+\mbox{\label{classOrganism_aba68f4745f6b0938cf157dcd27df1868}} 
+\index{Organism@{Organism}!set\+Am\+Ant@{set\+Am\+Ant}}
+\index{set\+Am\+Ant@{set\+Am\+Ant}!Organism@{Organism}}
+\subsubsection{set\+Am\+Ant()}
+{\footnotesize\ttfamily void Organism\+::set\+Am\+Ant (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+
+
+References am\+Ant.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Organism.\+h}\item 
+\textbf{ Organism.\+cpp}\end{DoxyCompactItemize}

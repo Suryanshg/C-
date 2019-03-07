@@ -1,0 +1,183 @@
+\section{Grid Class Reference}
+\label{classGrid}\index{Grid@{Grid}}
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Grid} ()
+\item 
+\textbf{ Grid} (int n\+Squares\+On\+A\+Side)
+\item 
+\textbf{ Cell} $\ast$$\ast$ \textbf{ get\+Board} ()
+\item 
+bool \textbf{ set\+Cell\+Occupant} (int r, int c, \textbf{ occupation\+Status} g)
+\item 
+\textbf{ occupation\+Status} \textbf{ get\+Cell\+Occupant} (int r, int c)
+\item 
+bool $\ast$ \textbf{ find\+Neighbours} (int r, int c, \textbf{ occupation\+Status} g)
+\item 
+int \textbf{ rand\+Int} (int n)
+\item 
+void \textbf{ print\+Grid} ()
+\item 
+virtual \textbf{ $\sim$\+Grid} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cell} $\ast$$\ast$ \textbf{ board}
+\item 
+int \textbf{ size} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classGrid_a4ac9ff4f63552b4c61ff90fcb35ad66c}} 
+\index{Grid@{Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid@{Grid}}
+\subsubsection{Grid()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Grid\+::\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References board.
+
+\mbox{\label{classGrid_af35b0accda3471400d55eae5ea07cd40}} 
+\index{Grid@{Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid@{Grid}}
+\subsubsection{Grid()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Grid\+::\+Grid (\begin{DoxyParamCaption}\item[{int}]{n\+Squares\+On\+A\+Side }\end{DoxyParamCaption})}
+
+
+
+References board, and size.
+
+\mbox{\label{classGrid_a3661d0a7f998caaaf8627d7a67072116}} 
+\index{Grid@{Grid}!````~Grid@{$\sim$\+Grid}}
+\index{````~Grid@{$\sim$\+Grid}!Grid@{Grid}}
+\subsubsection{$\sim$\+Grid()}
+{\footnotesize\ttfamily Grid\+::$\sim$\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+References board, size, and Cell\+::$\sim$\+Cell().
+
+
+
+Referenced by Tests2\+::grid\+Test().
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classGrid_afcdc34ab2dc4a3304a60dc6b17c16d6d}} 
+\index{Grid@{Grid}!find\+Neighbours@{find\+Neighbours}}
+\index{find\+Neighbours@{find\+Neighbours}!Grid@{Grid}}
+\subsubsection{find\+Neighbours()}
+{\footnotesize\ttfamily bool $\ast$ Grid\+::find\+Neighbours (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c,  }\item[{\textbf{ occupation\+Status}}]{g }\end{DoxyParamCaption})}
+
+
+
+References board, and size.
+
+
+
+Referenced by Ant\+::breed(), Doodlebug\+::breed(), Ant\+::move(), and Doodlebug\+::move().
+
+\mbox{\label{classGrid_a868367caac87e928c995444ab1f0cc89}} 
+\index{Grid@{Grid}!get\+Board@{get\+Board}}
+\index{get\+Board@{get\+Board}!Grid@{Grid}}
+\subsubsection{get\+Board()}
+{\footnotesize\ttfamily \textbf{ Cell} $\ast$$\ast$ Grid\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References board.
+
+
+
+Referenced by Tests2\+::ants\+Breed\+Test(), Tests2\+::ants\+Die\+Test(), Tests2\+::ants\+Move\+Test(), Ant\+::breed\+Helper(), Doodlebug\+::breed\+Helper(), Tests2\+::doodle\+Breed\+Test(), Tests2\+::doodle\+Dietest(), Tests2\+::doodle\+Move\+Test(), Doodlebug\+::eat(), Ant\+::move(), Doodlebug\+::move(), Ant\+::move\+Helper(), Doodlebug\+::move\+Helper(), and Production\+::run\+Production().
+
+\mbox{\label{classGrid_ae9f685fddd449805e372d59cfa6c42d6}} 
+\index{Grid@{Grid}!get\+Cell\+Occupant@{get\+Cell\+Occupant}}
+\index{get\+Cell\+Occupant@{get\+Cell\+Occupant}!Grid@{Grid}}
+\subsubsection{get\+Cell\+Occupant()}
+{\footnotesize\ttfamily \textbf{ occupation\+Status} Grid\+::get\+Cell\+Occupant (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+References board, and Cell\+::get\+Occupant().
+
+
+
+Referenced by Tests2\+::grid\+Test(), Tests2\+::make\+Ants\+Test(), print\+Grid(), and Production\+::run\+Production().
+
+\mbox{\label{classGrid_a04601ea9795a6928190e64fa89f10499}} 
+\index{Grid@{Grid}!print\+Grid@{print\+Grid}}
+\index{print\+Grid@{print\+Grid}!Grid@{Grid}}
+\subsubsection{print\+Grid()}
+{\footnotesize\ttfamily void Grid\+::print\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ant, doodlebug, empty, get\+Cell\+Occupant(), and size.
+
+
+
+Referenced by Tests2\+::ants\+Die\+Test(), Tests2\+::doodle\+Breed\+Test(), Tests2\+::doodle\+Dietest(), and Production\+::run\+Production().
+
+\mbox{\label{classGrid_a226900f87f6f824279d640dbb5ea33ca}} 
+\index{Grid@{Grid}!rand\+Int@{rand\+Int}}
+\index{rand\+Int@{rand\+Int}!Grid@{Grid}}
+\subsubsection{rand\+Int()}
+{\footnotesize\ttfamily int Grid\+::rand\+Int (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Referenced by Ant\+::breed(), Doodlebug\+::breed(), Doodlebug\+::eat(), Ant\+::move(), Doodlebug\+::move(), and Production\+::run\+Production().
+
+\mbox{\label{classGrid_ae74bcb1a42d969ece65fc00842715a8a}} 
+\index{Grid@{Grid}!set\+Cell\+Occupant@{set\+Cell\+Occupant}}
+\index{set\+Cell\+Occupant@{set\+Cell\+Occupant}!Grid@{Grid}}
+\subsubsection{set\+Cell\+Occupant()}
+{\footnotesize\ttfamily bool Grid\+::set\+Cell\+Occupant (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c,  }\item[{\textbf{ occupation\+Status}}]{g }\end{DoxyParamCaption})}
+
+
+
+References board, and Cell\+::set\+Occupant().
+
+
+
+Referenced by Tests2\+::ants\+Breed\+Test(), Tests2\+::ants\+Die\+Test(), Tests2\+::ants\+Move\+Test(), Ant\+::breed\+Helper(), Doodlebug\+::breed\+Helper(), Tests2\+::doodle\+Breed\+Test(), Tests2\+::doodle\+Dietest(), Tests2\+::doodle\+Move\+Test(), Doodlebug\+::eat(), Tests2\+::grid\+Test(), Tests2\+::make\+Ants\+Test(), Ant\+::move(), Doodlebug\+::move(), Ant\+::move\+Helper(), Doodlebug\+::move\+Helper(), and Production\+::run\+Production().
+
+
+
+\subsection{Field Documentation}
+\mbox{\label{classGrid_ad145c4ee2915bc23093edaa5129fb2b7}} 
+\index{Grid@{Grid}!board@{board}}
+\index{board@{board}!Grid@{Grid}}
+\subsubsection{board}
+{\footnotesize\ttfamily \textbf{ Cell}$\ast$$\ast$ Grid\+::board}
+
+
+
+Referenced by find\+Neighbours(), get\+Board(), get\+Cell\+Occupant(), Grid(), set\+Cell\+Occupant(), and $\sim$\+Grid().
+
+\mbox{\label{classGrid_a001848b23a2ded13a658a405752d388e}} 
+\index{Grid@{Grid}!size@{size}}
+\index{size@{size}!Grid@{Grid}}
+\subsubsection{size}
+{\footnotesize\ttfamily int Grid\+::size =0}
+
+
+
+Referenced by find\+Neighbours(), Grid(), print\+Grid(), and $\sim$\+Grid().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Grid.\+h}\item 
+\textbf{ Grid.\+cpp}\end{DoxyCompactItemize}

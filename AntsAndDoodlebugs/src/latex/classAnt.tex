@@ -1,0 +1,201 @@
+\section{Ant Class Reference}
+\label{classAnt}\index{Ant@{Ant}}
+
+
+{\ttfamily \#include $<$Ant.\+h$>$}
+
+Inheritance diagram for Ant\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAnt}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ant} ()
+\item 
+\textbf{ Ant} (int r=0, int c=0)
+\item 
+int \textbf{ get\+Row} ()
+\item 
+int \textbf{ get\+Col} ()
+\item 
+int \textbf{ get\+Breed\+Counter} ()
+\item 
+int \textbf{ move} (\textbf{ Grid} $\ast$grid)
+\item 
+void \textbf{ move\+Helper} (\textbf{ Grid} $\ast$grid, int dir)
+\item 
+void \textbf{ breed\+Helper} (\textbf{ Grid} $\ast$grid, int dir)
+\item 
+bool \textbf{ breed} (\textbf{ Grid} $\ast$grid)
+\item 
+\textbf{ $\sim$\+Ant} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ row} = 0
+\item 
+int \textbf{ col} = 0
+\item 
+int \textbf{ breed\+Counter} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classAnt_ad6c1a8f70419877f7a3e2c9c557f913d}} 
+\index{Ant@{Ant}!Ant@{Ant}}
+\index{Ant@{Ant}!Ant@{Ant}}
+\subsubsection{Ant()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ant\+::\+Ant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{classAnt_afcb9b285a5aa4b329e7eb5783970d85f}} 
+\index{Ant@{Ant}!Ant@{Ant}}
+\index{Ant@{Ant}!Ant@{Ant}}
+\subsubsection{Ant()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ant\+::\+Ant (\begin{DoxyParamCaption}\item[{int}]{r = {\ttfamily 0},  }\item[{int}]{c = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+References col, and row.
+
+\mbox{\label{classAnt_a33ca6bd592236726a18a2159908e4116}} 
+\index{Ant@{Ant}!````~Ant@{$\sim$\+Ant}}
+\index{````~Ant@{$\sim$\+Ant}!Ant@{Ant}}
+\subsubsection{$\sim$\+Ant()}
+{\footnotesize\ttfamily Ant\+::$\sim$\+Ant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classAnt_af899faded61186f5ca27e43cee1463ba}} 
+\index{Ant@{Ant}!breed@{breed}}
+\index{breed@{breed}!Ant@{Ant}}
+\subsubsection{breed()}
+{\footnotesize\ttfamily bool Ant\+::breed (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \textbf{ Organism} \doxyref{}{p.}{classOrganism_a423246fb1dee94db6c8c3b08fba57ead}.
+
+
+
+References breed\+Counter, breed\+Helper(), col, empty, Grid\+::find\+Neighbours(), Grid\+::rand\+Int(), and row.
+
+
+
+Referenced by move().
+
+\mbox{\label{classAnt_aa302446f5fe2068ad34fdb1d66fd7ede}} 
+\index{Ant@{Ant}!breed\+Helper@{breed\+Helper}}
+\index{breed\+Helper@{breed\+Helper}!Ant@{Ant}}
+\subsubsection{breed\+Helper()}
+{\footnotesize\ttfamily void Ant\+::breed\+Helper (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid,  }\item[{int}]{dir }\end{DoxyParamCaption})}
+
+
+
+References ant, col, Grid\+::get\+Board(), Cell\+::\+New\+Ptr(), row, and Grid\+::set\+Cell\+Occupant().
+
+
+
+Referenced by breed().
+
+\mbox{\label{classAnt_abc55a1896436ad4907fa1f9520657e6d}} 
+\index{Ant@{Ant}!get\+Breed\+Counter@{get\+Breed\+Counter}}
+\index{get\+Breed\+Counter@{get\+Breed\+Counter}!Ant@{Ant}}
+\subsubsection{get\+Breed\+Counter()}
+{\footnotesize\ttfamily int Ant\+::get\+Breed\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References breed\+Counter.
+
+\mbox{\label{classAnt_a3c31dc577ebf913d246c16db3b1ed8e2}} 
+\index{Ant@{Ant}!get\+Col@{get\+Col}}
+\index{get\+Col@{get\+Col}!Ant@{Ant}}
+\subsubsection{get\+Col()}
+{\footnotesize\ttfamily int Ant\+::get\+Col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References col.
+
+\mbox{\label{classAnt_acef79a2f69e2493dc3067db4b41783a9}} 
+\index{Ant@{Ant}!get\+Row@{get\+Row}}
+\index{get\+Row@{get\+Row}!Ant@{Ant}}
+\subsubsection{get\+Row()}
+{\footnotesize\ttfamily int Ant\+::get\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References row.
+
+\mbox{\label{classAnt_a6806cb12fd6e7eea2ff74ea8aa33ce28}} 
+\index{Ant@{Ant}!move@{move}}
+\index{move@{move}!Ant@{Ant}}
+\subsubsection{move()}
+{\footnotesize\ttfamily int Ant\+::move (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \textbf{ Organism} \doxyref{}{p.}{classOrganism_a2627a1917b919ab131d40d868b966020}.
+
+
+
+References breed(), breed\+Counter, col, empty, Grid\+::find\+Neighbours(), Grid\+::get\+Board(), move\+Helper(), Grid\+::rand\+Int(), row, Grid\+::set\+Cell\+Occupant(), and Cell\+::set\+Ptr().
+
+\mbox{\label{classAnt_a3fccb8a3cd08fea185e242272674443b}} 
+\index{Ant@{Ant}!move\+Helper@{move\+Helper}}
+\index{move\+Helper@{move\+Helper}!Ant@{Ant}}
+\subsubsection{move\+Helper()}
+{\footnotesize\ttfamily void Ant\+::move\+Helper (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid,  }\item[{int}]{dir }\end{DoxyParamCaption})}
+
+
+
+References ant, col, Grid\+::get\+Board(), Cell\+::get\+Ptr(), row, Grid\+::set\+Cell\+Occupant(), and Cell\+::set\+Ptr().
+
+
+
+Referenced by move().
+
+
+
+\subsection{Field Documentation}
+\mbox{\label{classAnt_a0a7fef71b2bcfb5bc3df0d588745dc01}} 
+\index{Ant@{Ant}!breed\+Counter@{breed\+Counter}}
+\index{breed\+Counter@{breed\+Counter}!Ant@{Ant}}
+\subsubsection{breed\+Counter}
+{\footnotesize\ttfamily int Ant\+::breed\+Counter =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by breed(), get\+Breed\+Counter(), and move().
+
+\mbox{\label{classAnt_afe21bedec87ea26e3db74857960a78c6}} 
+\index{Ant@{Ant}!col@{col}}
+\index{col@{col}!Ant@{Ant}}
+\subsubsection{col}
+{\footnotesize\ttfamily int Ant\+::col = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by Ant(), breed(), breed\+Helper(), get\+Col(), move(), and move\+Helper().
+
+\mbox{\label{classAnt_abf712c4a02e999938c7d79557a8fc24b}} 
+\index{Ant@{Ant}!row@{row}}
+\index{row@{row}!Ant@{Ant}}
+\subsubsection{row}
+{\footnotesize\ttfamily int Ant\+::row = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by Ant(), breed(), breed\+Helper(), get\+Row(), move(), and move\+Helper().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ant.\+h}\item 
+\textbf{ Ant.\+cpp}\end{DoxyCompactItemize}

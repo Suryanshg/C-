@@ -1,0 +1,155 @@
+\section{Cell Class Reference}
+\label{classCell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$Cell.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cell} ()
+\item 
+bool \textbf{ set\+Occupant} (\textbf{ occupation\+Status} g)
+\item 
+void \textbf{ New\+Ptr} (int r, int c, \textbf{ occupation\+Status} g)
+\item 
+\textbf{ Organism} $\ast$ \textbf{ get\+Ptr} ()
+\item 
+void \textbf{ set\+Ptr} (\textbf{ Organism} $\ast$new\+Ptr)
+\item 
+\textbf{ occupation\+Status} \textbf{ get\+Occupant} ()
+\item 
+virtual \textbf{ $\sim$\+Cell} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ occupation\+Status} \textbf{ guest}
+\item 
+\textbf{ Organism} $\ast$ \textbf{ ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classCell_a394510643e8664cf12b5efaf5cb99f71}} 
+\index{Cell@{Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!Cell@{Cell}}
+\subsubsection{Cell()}
+{\footnotesize\ttfamily Cell\+::\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References empty, guest, and ptr.
+
+\mbox{\label{classCell_a9fa559f7a28e2b4336c6879ca09304d8}} 
+\index{Cell@{Cell}!````~Cell@{$\sim$\+Cell}}
+\index{````~Cell@{$\sim$\+Cell}!Cell@{Cell}}
+\subsubsection{$\sim$\+Cell()}
+{\footnotesize\ttfamily Cell\+::$\sim$\+Cell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Referenced by Grid\+::$\sim$\+Grid().
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classCell_a7dcb8bc75a2e2591b3fd52b5f7c28ab1}} 
+\index{Cell@{Cell}!get\+Occupant@{get\+Occupant}}
+\index{get\+Occupant@{get\+Occupant}!Cell@{Cell}}
+\subsubsection{get\+Occupant()}
+{\footnotesize\ttfamily \textbf{ occupation\+Status} Cell\+::get\+Occupant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References guest.
+
+
+
+Referenced by Grid\+::get\+Cell\+Occupant().
+
+\mbox{\label{classCell_a1009c9d271700e6ee9a7da1eca77802a}} 
+\index{Cell@{Cell}!get\+Ptr@{get\+Ptr}}
+\index{get\+Ptr@{get\+Ptr}!Cell@{Cell}}
+\subsubsection{get\+Ptr()}
+{\footnotesize\ttfamily \textbf{ Organism} $\ast$ Cell\+::get\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References ptr.
+
+
+
+Referenced by Tests2\+::ants\+Breed\+Test(), Tests2\+::ants\+Die\+Test(), Tests2\+::ants\+Move\+Test(), Tests2\+::doodle\+Breed\+Test(), Tests2\+::doodle\+Dietest(), Tests2\+::doodle\+Move\+Test(), Ant\+::move\+Helper(), Doodlebug\+::move\+Helper(), and Production\+::run\+Production().
+
+\mbox{\label{classCell_a393e1ebaeb895c634c9402e7c16306e2}} 
+\index{Cell@{Cell}!New\+Ptr@{New\+Ptr}}
+\index{New\+Ptr@{New\+Ptr}!Cell@{Cell}}
+\subsubsection{New\+Ptr()}
+{\footnotesize\ttfamily void Cell\+::\+New\+Ptr (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c,  }\item[{\textbf{ occupation\+Status}}]{g }\end{DoxyParamCaption})}
+
+
+
+References ant, doodlebug, empty, and ptr.
+
+
+
+Referenced by Tests2\+::ants\+Breed\+Test(), Tests2\+::ants\+Die\+Test(), Tests2\+::ants\+Move\+Test(), Ant\+::breed\+Helper(), Doodlebug\+::breed\+Helper(), Tests2\+::doodle\+Breed\+Test(), Tests2\+::doodle\+Dietest(), Tests2\+::doodle\+Move\+Test(), and Production\+::run\+Production().
+
+\mbox{\label{classCell_a2346933316b45d87264d50e563c2f895}} 
+\index{Cell@{Cell}!set\+Occupant@{set\+Occupant}}
+\index{set\+Occupant@{set\+Occupant}!Cell@{Cell}}
+\subsubsection{set\+Occupant()}
+{\footnotesize\ttfamily bool Cell\+::set\+Occupant (\begin{DoxyParamCaption}\item[{\textbf{ occupation\+Status}}]{g }\end{DoxyParamCaption})}
+
+
+
+References empty, and guest.
+
+
+
+Referenced by Grid\+::set\+Cell\+Occupant().
+
+\mbox{\label{classCell_a99ffc4814041c8b8482cabe20a25a17e}} 
+\index{Cell@{Cell}!set\+Ptr@{set\+Ptr}}
+\index{set\+Ptr@{set\+Ptr}!Cell@{Cell}}
+\subsubsection{set\+Ptr()}
+{\footnotesize\ttfamily void Cell\+::set\+Ptr (\begin{DoxyParamCaption}\item[{\textbf{ Organism} $\ast$}]{new\+Ptr }\end{DoxyParamCaption})}
+
+
+
+References ptr.
+
+
+
+Referenced by Doodlebug\+::eat(), Ant\+::move(), Doodlebug\+::move(), Ant\+::move\+Helper(), and Doodlebug\+::move\+Helper().
+
+
+
+\subsection{Field Documentation}
+\mbox{\label{classCell_aafc273a5125cf29742a8df6f5a5a881c}} 
+\index{Cell@{Cell}!guest@{guest}}
+\index{guest@{guest}!Cell@{Cell}}
+\subsubsection{guest}
+{\footnotesize\ttfamily \textbf{ occupation\+Status} Cell\+::guest}
+
+
+
+Referenced by Cell(), get\+Occupant(), and set\+Occupant().
+
+\mbox{\label{classCell_a0f787af5a8409c38ded198420fe8afae}} 
+\index{Cell@{Cell}!ptr@{ptr}}
+\index{ptr@{ptr}!Cell@{Cell}}
+\subsubsection{ptr}
+{\footnotesize\ttfamily \textbf{ Organism}$\ast$ Cell\+::ptr}
+
+
+
+Referenced by Cell(), get\+Ptr(), New\+Ptr(), and set\+Ptr().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cell.\+h}\item 
+\textbf{ Cell.\+cpp}\end{DoxyCompactItemize}

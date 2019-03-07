@@ -1,0 +1,241 @@
+\section{Doodlebug Class Reference}
+\label{classDoodlebug}\index{Doodlebug@{Doodlebug}}
+
+
+{\ttfamily \#include $<$Doodlebug.\+h$>$}
+
+Inheritance diagram for Doodlebug\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDoodlebug}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Doodlebug} ()
+\item 
+\textbf{ Doodlebug} (int r=0, int c=0)
+\item 
+int \textbf{ get\+Row} ()
+\item 
+int \textbf{ get\+Col} ()
+\item 
+int \textbf{ get\+Breed\+Counter} ()
+\item 
+int \textbf{ get\+Death\+Counter} ()
+\item 
+int \textbf{ move} (\textbf{ Grid} $\ast$grid)
+\item 
+void \textbf{ move\+Helper} (\textbf{ Grid} $\ast$grid, int dir)
+\item 
+void \textbf{ breed\+Helper} (\textbf{ Grid} $\ast$grid, int dir)
+\item 
+bool \textbf{ breed} (\textbf{ Grid} $\ast$grid)
+\item 
+int \textbf{ eat} (\textbf{ Grid} $\ast$grid, bool $\ast$arr\+Ants)
+\item 
+virtual \textbf{ $\sim$\+Doodlebug} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ row} = 0
+\item 
+int \textbf{ col} = 0
+\item 
+int \textbf{ breed\+Counter} =0
+\item 
+int \textbf{ death\+Count} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{classDoodlebug_afb2796ea39a6ffa13d4f54ac68dd52fc}} 
+\index{Doodlebug@{Doodlebug}!Doodlebug@{Doodlebug}}
+\index{Doodlebug@{Doodlebug}!Doodlebug@{Doodlebug}}
+\subsubsection{Doodlebug()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Doodlebug\+::\+Doodlebug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{classDoodlebug_a5c450345bdd9e9895f589b8321a850a3}} 
+\index{Doodlebug@{Doodlebug}!Doodlebug@{Doodlebug}}
+\index{Doodlebug@{Doodlebug}!Doodlebug@{Doodlebug}}
+\subsubsection{Doodlebug()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Doodlebug\+::\+Doodlebug (\begin{DoxyParamCaption}\item[{int}]{r = {\ttfamily 0},  }\item[{int}]{c = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+References col, and row.
+
+\mbox{\label{classDoodlebug_ac318cc9acbd9a3af52348a236070d891}} 
+\index{Doodlebug@{Doodlebug}!````~Doodlebug@{$\sim$\+Doodlebug}}
+\index{````~Doodlebug@{$\sim$\+Doodlebug}!Doodlebug@{Doodlebug}}
+\subsubsection{$\sim$\+Doodlebug()}
+{\footnotesize\ttfamily Doodlebug\+::$\sim$\+Doodlebug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{classDoodlebug_a6ab3919da6f9404f1f3af05f0bbde13c}} 
+\index{Doodlebug@{Doodlebug}!breed@{breed}}
+\index{breed@{breed}!Doodlebug@{Doodlebug}}
+\subsubsection{breed()}
+{\footnotesize\ttfamily bool Doodlebug\+::breed (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \textbf{ Organism} \doxyref{}{p.}{classOrganism_a423246fb1dee94db6c8c3b08fba57ead}.
+
+
+
+References breed\+Counter, breed\+Helper(), col, empty, Grid\+::find\+Neighbours(), Grid\+::rand\+Int(), and row.
+
+
+
+Referenced by move().
+
+\mbox{\label{classDoodlebug_a0c00c2c7d106c8fc298e55be562238d2}} 
+\index{Doodlebug@{Doodlebug}!breed\+Helper@{breed\+Helper}}
+\index{breed\+Helper@{breed\+Helper}!Doodlebug@{Doodlebug}}
+\subsubsection{breed\+Helper()}
+{\footnotesize\ttfamily void Doodlebug\+::breed\+Helper (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid,  }\item[{int}]{dir }\end{DoxyParamCaption})}
+
+
+
+References col, doodlebug, Grid\+::get\+Board(), Cell\+::\+New\+Ptr(), row, and Grid\+::set\+Cell\+Occupant().
+
+
+
+Referenced by breed().
+
+\mbox{\label{classDoodlebug_a2737e34be4b0d57a188eb35bb7666412}} 
+\index{Doodlebug@{Doodlebug}!eat@{eat}}
+\index{eat@{eat}!Doodlebug@{Doodlebug}}
+\subsubsection{eat()}
+{\footnotesize\ttfamily int Doodlebug\+::eat (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid,  }\item[{bool $\ast$}]{arr\+Ants }\end{DoxyParamCaption})}
+
+
+
+References breed\+Counter, col, death\+Count, empty, Grid\+::get\+Board(), move\+Helper(), Grid\+::rand\+Int(), row, Grid\+::set\+Cell\+Occupant(), and Cell\+::set\+Ptr().
+
+
+
+Referenced by move().
+
+\mbox{\label{classDoodlebug_acf526002dc3072874ca207765b2124fb}} 
+\index{Doodlebug@{Doodlebug}!get\+Breed\+Counter@{get\+Breed\+Counter}}
+\index{get\+Breed\+Counter@{get\+Breed\+Counter}!Doodlebug@{Doodlebug}}
+\subsubsection{get\+Breed\+Counter()}
+{\footnotesize\ttfamily int Doodlebug\+::get\+Breed\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References breed\+Counter.
+
+\mbox{\label{classDoodlebug_aa311d47bffaf0e68785b8a1472537807}} 
+\index{Doodlebug@{Doodlebug}!get\+Col@{get\+Col}}
+\index{get\+Col@{get\+Col}!Doodlebug@{Doodlebug}}
+\subsubsection{get\+Col()}
+{\footnotesize\ttfamily int Doodlebug\+::get\+Col (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References death\+Count.
+
+\mbox{\label{classDoodlebug_afa74bc4327951a7016394e1e4b699358}} 
+\index{Doodlebug@{Doodlebug}!get\+Death\+Counter@{get\+Death\+Counter}}
+\index{get\+Death\+Counter@{get\+Death\+Counter}!Doodlebug@{Doodlebug}}
+\subsubsection{get\+Death\+Counter()}
+{\footnotesize\ttfamily int Doodlebug\+::get\+Death\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References death\+Count.
+
+\mbox{\label{classDoodlebug_afb3ba6dc552b2c83caf316405db616ec}} 
+\index{Doodlebug@{Doodlebug}!get\+Row@{get\+Row}}
+\index{get\+Row@{get\+Row}!Doodlebug@{Doodlebug}}
+\subsubsection{get\+Row()}
+{\footnotesize\ttfamily int Doodlebug\+::get\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+References row.
+
+\mbox{\label{classDoodlebug_a5f28800e091fbeaabd57079b0c36e997}} 
+\index{Doodlebug@{Doodlebug}!move@{move}}
+\index{move@{move}!Doodlebug@{Doodlebug}}
+\subsubsection{move()}
+{\footnotesize\ttfamily int Doodlebug\+::move (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \textbf{ Organism} \doxyref{}{p.}{classOrganism_a2627a1917b919ab131d40d868b966020}.
+
+
+
+References ant, breed(), breed\+Counter, col, death\+Count, eat(), empty, Grid\+::find\+Neighbours(), Grid\+::get\+Board(), move\+Helper(), Grid\+::rand\+Int(), row, Grid\+::set\+Cell\+Occupant(), and Cell\+::set\+Ptr().
+
+\mbox{\label{classDoodlebug_abace0ae7901fa4ba74147a0e11afedcf}} 
+\index{Doodlebug@{Doodlebug}!move\+Helper@{move\+Helper}}
+\index{move\+Helper@{move\+Helper}!Doodlebug@{Doodlebug}}
+\subsubsection{move\+Helper()}
+{\footnotesize\ttfamily void Doodlebug\+::move\+Helper (\begin{DoxyParamCaption}\item[{\textbf{ Grid} $\ast$}]{grid,  }\item[{int}]{dir }\end{DoxyParamCaption})}
+
+
+
+References col, doodlebug, empty, Grid\+::get\+Board(), Cell\+::get\+Ptr(), row, Grid\+::set\+Cell\+Occupant(), and Cell\+::set\+Ptr().
+
+
+
+Referenced by eat(), and move().
+
+
+
+\subsection{Field Documentation}
+\mbox{\label{classDoodlebug_a36bdb37b8307e872e43f4f848fdb0d03}} 
+\index{Doodlebug@{Doodlebug}!breed\+Counter@{breed\+Counter}}
+\index{breed\+Counter@{breed\+Counter}!Doodlebug@{Doodlebug}}
+\subsubsection{breed\+Counter}
+{\footnotesize\ttfamily int Doodlebug\+::breed\+Counter =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by breed(), eat(), get\+Breed\+Counter(), and move().
+
+\mbox{\label{classDoodlebug_a6f748f20fbbac04546be634f4b14ff35}} 
+\index{Doodlebug@{Doodlebug}!col@{col}}
+\index{col@{col}!Doodlebug@{Doodlebug}}
+\subsubsection{col}
+{\footnotesize\ttfamily int Doodlebug\+::col = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by breed(), breed\+Helper(), Doodlebug(), eat(), move(), and move\+Helper().
+
+\mbox{\label{classDoodlebug_a26e32b0fb5ca30c7b8e227152a4862d4}} 
+\index{Doodlebug@{Doodlebug}!death\+Count@{death\+Count}}
+\index{death\+Count@{death\+Count}!Doodlebug@{Doodlebug}}
+\subsubsection{death\+Count}
+{\footnotesize\ttfamily int Doodlebug\+::death\+Count =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by eat(), get\+Col(), get\+Death\+Counter(), and move().
+
+\mbox{\label{classDoodlebug_a4ab3657542999f3f83988ff1e113d477}} 
+\index{Doodlebug@{Doodlebug}!row@{row}}
+\index{row@{row}!Doodlebug@{Doodlebug}}
+\subsubsection{row}
+{\footnotesize\ttfamily int Doodlebug\+::row = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referenced by breed(), breed\+Helper(), Doodlebug(), eat(), get\+Row(), move(), and move\+Helper().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Doodlebug.\+h}\item 
+\textbf{ Doodlebug.\+cpp}\end{DoxyCompactItemize}
